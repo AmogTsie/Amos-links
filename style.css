@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Assistant", sans-serif;
+}
+
+body{
+    background-image: url("images/pexels-tijana-drndarski-449691-5475176.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background: hsl(0, 1%, 39%);
+    width: 60vh;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+ /*Info Section*/
+.info{
+    text-align: center;
+}
+.info img{ 
+    border-radius: 50%;
+    height: 150px;
+    font-weight: 100px;
+    margin-top: 30px ;
+    margin-bottom: 10px;
+}
+.info h1{
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 7px;
+  font-family: "Asar", serif;
+  font-weight: 500;
+}
+.info h4{
+  color: white;
+  margin-bottom: 17px;
+ font-weight: 500;
+}
+.info p{
+    color:  hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Links Section*/
+.links{
+    text-align: center;
+    margin: 30px;
+    cursor:  pointer;
+}
+.links ul a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.6s;
+    position: relative;
+    overflow: hidden;
+}
+
+.links ul{
+    border: 1px solid hsl(0, 3%, 52%);
+    border-radius: 20px;
+    background: hsl(0, 3%, 52%);
+    padding: 10px 20px;
+    margin: 10px;
+    
+}
+.links ul a:hover{
+   color: hsl(340, 10%, 6%);
+}
+
+@media only screen and (max-width:770px){
+    .container{
+        width: 50vh;
+        height: 85vh;
+        border-radius: 20px;
+    }
+}
